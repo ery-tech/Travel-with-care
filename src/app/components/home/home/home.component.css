@@ -3,7 +3,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-
+position: relative;
 
 }
 
@@ -16,6 +16,10 @@
  font-size: 24px;
  font-weight: 800;
 }
+.description a {
+  color: rgb(216, 250, 253);
+  text-shadow: 3px 3px 3px #fac506;
+}
 .description-img{
   bottom: 10%;
   height:fit-content;
@@ -26,31 +30,9 @@
   cursor: pointer;
   width:300px;
 }
-.footer {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: center;
-  font-weight: 600;
-  bottom: 0;
-  background-color: transparent;
-  height: fit-content;
-  background-repeat: no-repeat;
-  width: 100vw;
-  padding: 5px 0;
-  text-align: center;
-}
 
-.footer p{
 
-  color: rgb(216, 250, 253);
-  text-shadow: 3px 3px 3px #fac506;
-  font-size: 22px;
-  font-weight: 800;
-  margin-top: 1em;
-}
+
 @keyframes Myplane {
   0%   {transform:translateX(-100%) ; }
   100%  {transform: translateX(150%); }
@@ -71,7 +53,5 @@
     animation: Myplane 14s infinite ;
 
   }
-  .footer p{
-    font-size: smaller;
-  }
+
 }
