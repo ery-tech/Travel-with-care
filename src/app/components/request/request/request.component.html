@@ -1,0 +1,48 @@
+<div class="main">
+
+<div class="form container-fluid" >
+  <form  #form="ngForm" (ngSubmit)="calculate(form)" *ngIf="response == ''" >
+      <div class="select-container">
+    <label>Passengers</label>
+    <input name="passengers" type="number" ngModel required>
+  </div>
+
+  <div class="select-container">
+    <label>Departure airport code</label>
+    <select name="origin" type="text" ngModel required>
+      <option *ngFor=" let airport of airports">{{airport.city}} ({{airport.code}})</option>
+    </select>
+  </div>
+
+  <div class="select-container">
+    <label>Arrival airport code</label>
+    <select name="destination" type="text" ngModel required>
+      <option *ngFor=" let airport of airports">{{airport.city}} ({{airport.code}})</option>
+    </select>
+  </div>
+
+  <div class="select-container">
+    <label>Cabin class</label>
+    <select name="cabinClass" type="text" ngModel required>
+      <option>first</option>
+      <option>business</option>
+      <option>economy</option>
+      <option>unknown</option>
+    </select>
+  </div>
+<div class="btn-container">
+  <button class="myButton" type="submit" [disabled]="form.invalid">Calculate</button>
+
+</div>
+
+
+</form>
+<ng-container *ngIf="response != '' || undefined">
+  <app-response  [response]="response" [passengers]="passengers"></app-response>
+  </ng-container>
+</div>
+<div class="footer">
+  <p>The content on this site is provided by Climatiq Api</p>
+
+ </div>
+</div>

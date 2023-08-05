@@ -1,0 +1,141 @@
+.main{
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: rgb(216, 250, 253);
+  text-shadow: 3px 3px 3px #fac506;
+  font-size: 16px;
+}
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.form{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+ height: 70vh;
+ max-height: fit-content;
+background-color: transparent;
+border: 5px solid bisque;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+border-bottom-left-radius: 100px;
+border-bottom-right-radius: 100px;
+}
+
+label {
+  font-size: 30px;
+  font-weight: 700;
+}
+select,
+input {
+  height: 1.5rem;
+  border: solid 2px rgb(7, 77, 131);
+  border-radius: 100px;
+  background-color: #faf5e0;
+  color: rgb(10, 112, 171);
+  margin-top: 5px;
+  width: 250px;
+  font-size: 18px;
+  text-align: center;
+}
+.btn-container{
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #4c66b7;
+	background:linear-gradient(to bottom, #7abbf5 5%, #96c7f6 100%);
+	background-color:#a1c0f7;
+	border-radius:15px;
+  border: solid 2px rgb(7, 77, 131);
+	display:inline-block;
+	cursor:pointer;
+	font-size:30px;
+  font-weight: 700;
+	padding:9px 20px;
+	text-decoration:none;
+	color: rgb(190, 246, 251);
+  text-shadow: 3px 3px 3px #fac506;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5eadf3 5%, #96c7f6 100%);
+	background-color:#a1e4ff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.footer {
+  position:absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  font-weight: 600;
+  bottom: 0;
+  margin-top: 3rem;
+  background-color: transparent;
+  height: fit-content;
+  background-repeat: no-repeat;
+  width: 100vw;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer p{
+
+  color: rgb(216, 250, 253);
+  text-shadow: 3px 3px 3px #fac506;
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 300px) and (max-width:769px) {
+  label {
+    font-size: 16px;
+  }
+  .form{
+    width: 80vw;
+
+  }
+  .myButton{
+    font-size: 16px !important;
+    margin-top: 250px;
+    padding: 0px !important;
+    width: 90px;
+    height: 40px;
+    padding: auto;
+
+  }
+  select, input{
+    font-size: 14px;
+    width: 150px;
+  }
+  .btn-container{
+    height: 4rem;
+  }
+  .footer p{
+    font-size: 14px !important;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width:900px) {
+  .form{
+    width: 50vw;
+  }
+
+}
