@@ -21,14 +21,14 @@ position: relative;
   text-shadow: 3px 3px 3px #fac506;
 }
 .description-img{
-  bottom: 5%;
+  bottom: 5vh;
   height:fit-content;
   position: relative;
   animation: Myplane 17s infinite ;
 }
 .description-img img{
   cursor: pointer;
-  width:300px;
+  width:250px;
 }
 
 
@@ -52,6 +52,12 @@ position: relative;
     bottom: 10px;
     animation: Myplane 12s infinite ;
 
+  }
+
+}
+@media only screen and (min-width: 2000px)  {
+  .description-img img{
+    width:350px;
   }
 
 }
