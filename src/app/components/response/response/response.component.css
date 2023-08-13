@@ -3,17 +3,24 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10%;
+  justify-content: center;
 }
 p{
   font-size: 24px;
   font-weight: 800;
+  margin: auto;
 }
 .container img{
 width: 60px;
 }
 
-@media only screen and (min-width: 300px) and (max-width:1300px) {
+@media only screen and (min-width: 300px) and (max-width:768px) {
   p{
     font-size: 15px;}
+
+}
+@media only screen and (min-width: 769px) and (max-width:1441px) {
+  p{
+    font-size: 18px;}
 
 }
