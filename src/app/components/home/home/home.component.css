@@ -9,7 +9,7 @@ position: relative;
 
 .description{
   min-height: 60vh;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: rgb(216, 250, 253);
   text-shadow: 3px 3px 3px #fac506;
   max-width: 60vw;
@@ -21,10 +21,10 @@ position: relative;
   text-shadow: 3px 3px 3px #fac506;
 }
 .description-img{
-  bottom: 10%;
+  bottom: 5%;
   height:fit-content;
   position: relative;
-  animation: Myplane 20s infinite ;
+  animation: Myplane 17s infinite ;
 }
 .description-img img{
   cursor: pointer;
@@ -50,7 +50,7 @@ position: relative;
   .description-img{
     position: relative;
     bottom: 10px;
-    animation: Myplane 14s infinite ;
+    animation: Myplane 12s infinite ;
 
   }
 

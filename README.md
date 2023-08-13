@@ -29,6 +29,6 @@ The Climatiq API calculates the ecological footprint as kg of CO2 per passenger.
 
    <h4>Deploy link:     </h4>
   <span> 
-  <img align="left" src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7  ">
-
+  <img align="left" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase">
+    https://travel-with-care.web.app/
 </span>
