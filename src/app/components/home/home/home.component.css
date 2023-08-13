@@ -21,7 +21,7 @@ position: relative;
   text-shadow: 3px 3px 3px #fac506;
 }
 .description-img{
-  bottom: 5vh;
+  bottom: 3vh;
   height:fit-content;
   position: relative;
   animation: Myplane 17s infinite ;
